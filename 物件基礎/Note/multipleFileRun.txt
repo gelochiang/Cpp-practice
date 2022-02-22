@@ -1,0 +1,3 @@
+If want to run more than two file need to enter key :
+g++ -o main.cpp ex.cpp
+in compiler
