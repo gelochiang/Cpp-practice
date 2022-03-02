@@ -1,3 +1,5 @@
 If want to run more than two file need to enter key :
-g++ -o main.cpp ex.cpp
+g++ -o test main.cpp ex.cpp
 in compiler
+
+// The keyword test is create one exe file name: test about main.cpp & ex.cpp
