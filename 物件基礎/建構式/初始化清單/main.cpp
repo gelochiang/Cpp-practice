@@ -9,7 +9,7 @@ private:
     const string name;
     const double balance;
 public:
-    Account() : Account("5487", "???", 0.0) {}; // 會丟到 26 行的 function 裡
+    Account() : Account("5487", "???", 0.0) {}; // 會丟到 27 行的 function 裡
 
 
     /*
@@ -27,7 +27,7 @@ public:
     Account(string id, string name, double balace) :
         id(id), name(name), balance(balace) {};
 
-    // 30 行的做法是再丟到 26 行的 function 裡
+    // 30 行的做法是再丟到 27 行的 function 裡
     Account(string id, double balance) : Account(id, "???", balance) {};
 
     void print()
@@ -56,4 +56,4 @@ int main()
     return 0;
 }
 
-// 可以嘗試 26, 27 行變成註解，會發現出現錯誤
+// 可以嘗試 27, 28 行變成註解，會發現出現錯誤
