@@ -9,7 +9,8 @@ private:
     const string name;
     const double balance;
 public:
-    Account() : Account("5487", "???", 0.0) {}; // 會丟到 27 行的 function 裡
+    Account() : Account("5487", "???", 0.0) {} // 會丟到 28 行的 function 裡
+    // 初始化清單可以不用加 ;
 
 
     /*
@@ -25,10 +26,10 @@ public:
 
     // 以下就是初始化清單的用法，可以打破 const。他會先取得這裡面的初始值 assign 給 const data fields.
     Account(string id, string name, double balace) :
-        id(id), name(name), balance(balace) {};
+        id(id), name(name), balance(balace) {}
 
-    // 30 行的做法是再丟到 27 行的 function 裡
-    Account(string id, double balance) : Account(id, "???", balance) {};
+    // 32 行的做法是再丟到 28 行的 function 裡
+    Account(string id, double balance) : Account(id, "???", balance) {}
 
     void print()
     {
@@ -56,4 +57,4 @@ int main()
     return 0;
 }
 
-// 可以嘗試 27, 28 行變成註解，會發現出現錯誤
+// 可以嘗試 28, 29 行變成註解，會發現出現錯誤
