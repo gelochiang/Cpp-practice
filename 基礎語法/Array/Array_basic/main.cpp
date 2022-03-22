@@ -30,6 +30,15 @@ void outputArr2(int *a, int size)
     cout << endl;
 }
 
+void printArr(int &a, int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        cout << a+i << " ";
+    }
+    cout << endl;
+}
+
 int main()
 {
     int arr[] = {1, 2, 3};
@@ -78,6 +87,11 @@ int main()
     cout << "----- 傳址版 -----\n";
     outputArr(arr3, 3);
     outputArr2(arr3, 3);
+    printArr(arr3[0], 3); 
+    /*
+        函式接收參數假如是一個位址就要明確的跟他說 array 第 0 的位置是多少
+        能比較 88, 89 和 90 的差別所在
+    */
 
     return 0;
 }
